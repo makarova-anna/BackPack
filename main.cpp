@@ -3,9 +3,9 @@
 #include <algorithm>
 #include <list>
 
-
 using namespace std;
 
+// функция для решения задачи
 int Solution(const int& N, const vector<int>& weights, const int& W, const vector<int>& values)
 {
     int i, j;
