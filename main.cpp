@@ -38,16 +38,18 @@ int Solution(int N, vector<int> weights, int W, vector<int> values)
     }
     return output;
 }
-namespace fsm = std::filesystem;
+namespace fs = std::filesystem;
+
+
 
 int main() 
 {
     string path = "/Users/Анна/Desktop/backpack";
-    auto iterator = fsm::directory_iterator(path);
-    vector<fsm::path> Array;
-    copy_if(fsm::begin(iterator), fsm::end(iterator), std::back_inserter(Array), [](const auto& enter)
+    auto iterator = fs::directory_iterator(path);
+    vector<fs::path> Array;
+    copy_if(fs::begin(iterator), fs::end(iterator), std::back_inserter(Array), [](const auto& enter)
     {
-        return fsm::is_regular_file(enter);
+        return fs::is_regular_file(enter);
     });
     for (auto& s : Array)
     {
