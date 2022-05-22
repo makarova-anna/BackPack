@@ -38,8 +38,7 @@ int Solution(int N, vector<int> weights, int W, vector<int> values)
     }
     return output;
 }
-
-using namespace fsm = filesystem;
+namespace fsm = std::filesystem;
 
 int main() 
 {
